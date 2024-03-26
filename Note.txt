@@ -1,0 +1,4 @@
+[Reference]
+
+- When should a class be allocated on the stack instead of the heap
+https://stackoverflow.com/questions/12333062/when-should-a-class-be-allocated-on-the-stack-instead-of-the-heap
