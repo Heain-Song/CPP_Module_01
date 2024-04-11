@@ -6,7 +6,7 @@
 /*   By: hesong <hesong@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/25 18:10:04 by hesong            #+#    #+#             */
-/*   Updated: 2024/04/11 17:39:15 by hesong           ###   ########.fr       */
+/*   Updated: 2024/04/11 19:00:39 by hesong           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 Zombie::Zombie(void)
 {
-	this->_name = "no_name";
+	//this->_name = "no_name";
 }
 Zombie::Zombie(std::string name)
 {

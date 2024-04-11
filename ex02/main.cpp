@@ -5,27 +5,24 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: hesong <hesong@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/04/11 17:25:02 by hesong            #+#    #+#             */
-/*   Updated: 2024/04/11 19:55:55 by hesong           ###   ########.fr       */
+/*   Created: 2024/04/11 20:22:40 by hesong            #+#    #+#             */
+/*   Updated: 2024/04/11 20:22:41 by hesong           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../includes/Zombie.hpp"
+#include <iostream>
+#include <string>
 
 int main(void)
 {
-	int N = 5;
-	Zombie* zombies = zombieHorde(N, "zombies");
+	std::string	str = "HI THIS IS BRAIN";
+	std::string	*stringPTR = &str;
+	std::string &stringREF = str;
 
-	if (zombies != NULL)
-	{
-		for (int i = 0; i < N; i++)
-			zombies[i].announce();
-		delete [] zombies;
-	}
-	else
-		std::cout << "There's no horde of Zombies!" << std::endl;
-	return (0);
+	std::cout << "Memory address of str : " << &str << std::endl;
+	std::cout << "Memory address of stringPRT : " << stringPTR << std::endl;
+	std::cout << "Memory address of stringREF : " << &stringREF << std::endl;
+	std::cout << "Value in str : " << str << std::endl;
+	std::cout << "Value in stringPRT : " << *stringPTR << std::endl;
+	std::cout << "Value in stringREF : " << stringREF << std::endl;
 }
-
-

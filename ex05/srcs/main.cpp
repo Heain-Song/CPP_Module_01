@@ -1,32 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Zombie.hpp                                         :+:      :+:    :+:   */
+/*   main.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: hesong <hesong@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/04/11 17:25:35 by hesong            #+#    #+#             */
-/*   Updated: 2024/04/11 19:55:41 by hesong           ###   ########.fr       */
+/*   Created: 2024/04/11 23:30:43 by hesong            #+#    #+#             */
+/*   Updated: 2024/04/11 23:37:25 by hesong           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef ZOMBIE_HPP
-# define ZOMBIE_HPP
+#include "Harl.hpp"
 
-# include <iostream>
+int main(void)
+{
+	Harl harl;
 
-class	Zombie{
+	harl.complain("DEBUG");
+	harl.complain("INFO");
+	harl.complain("WARNING");
+	harl.complain("ERROR");
 
-	private:
-		std::string	_name;
-
-	public:
-		void	announce(void);
-		void	setName(std::string name);
-		Zombie(void);
-		~Zombie(void);
-};
-
-Zombie* zombieHorde( int N, std::string name );
-
-#endif
+	return (0);
+}

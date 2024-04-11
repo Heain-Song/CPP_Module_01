@@ -6,7 +6,7 @@
 /*   By: hesong <hesong@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/25 18:03:20 by hesong            #+#    #+#             */
-/*   Updated: 2024/04/11 17:39:39 by hesong           ###   ########.fr       */
+/*   Updated: 2024/04/11 19:55:25 by hesong           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,6 @@
 # define ZOMBIE_HPP
 
 # include <iostream>
-# include <string>
 
 class	Zombie{
 
