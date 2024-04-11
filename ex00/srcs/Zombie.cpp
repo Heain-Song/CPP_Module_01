@@ -6,31 +6,23 @@
 /*   By: hesong <hesong@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/25 18:10:04 by hesong            #+#    #+#             */
-/*   Updated: 2024/03/26 16:41:31 by hesong           ###   ########.fr       */
+/*   Updated: 2024/04/11 16:34:35 by hesong           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Zombie.hpp"
 
-void	announce(void)
+Zombie::Zombie(std::string str)
 {
-	std::cout << this->_name << ": ";
-	std::cout << "BraiiiiiiinnnzzzZ..." << std::endl;
+	this->_name = str;
 }
 
-Zombie*	newZombie(std::string _name)
+Zombie::~Zombie(void)
 {
-	/*It creates a zombie, name it, and return it
-	so you can use it outside of the function scope.
-	*/
-	Zombie *ptr = new Zombie;
-
-	return (ptr);
+	std::cout << this->_name << " has been destroyed!" << std::endl;
 }
 
-void	randomChump( std::string _name)
+void	Zombie::announce(void)
 {
-	/*
-	It creates a zombie, name it, and the zombie announces itself.
-	*/
+	std::cout << this->_name << ": " << "BraiiiiiiinnnzzzZ..." << std::endl;
 }
