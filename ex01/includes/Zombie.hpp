@@ -6,7 +6,7 @@
 /*   By: hesong <hesong@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/11 17:25:35 by hesong            #+#    #+#             */
-/*   Updated: 2024/04/11 19:55:41 by hesong           ###   ########.fr       */
+/*   Updated: 2024/04/12 16:04:38 by hesong           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@
 class	Zombie{
 
 	private:
-		std::string	_name;
+		std::string	name;
 
 	public:
 		void	announce(void);

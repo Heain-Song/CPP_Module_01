@@ -6,16 +6,16 @@
 /*   By: hesong <hesong@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/11 17:25:02 by hesong            #+#    #+#             */
-/*   Updated: 2024/04/11 19:55:55 by hesong           ###   ########.fr       */
+/*   Updated: 2024/04/12 16:05:27 by hesong           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../includes/Zombie.hpp"
+#include "Zombie.hpp"
 
 int main(void)
 {
 	int N = 5;
-	Zombie* zombies = zombieHorde(N, "zombies");
+	Zombie* zombies = zombieHorde(N, "zombieHorde");
 
 	if (zombies != NULL)
 	{
