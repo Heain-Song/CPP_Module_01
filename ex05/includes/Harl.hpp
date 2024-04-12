@@ -6,14 +6,15 @@
 /*   By: hesong <hesong@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/11 23:31:47 by hesong            #+#    #+#             */
-/*   Updated: 2024/04/12 10:45:50 by hesong           ###   ########.fr       */
+/*   Updated: 2024/04/12 11:40:02 by hesong           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef HARL_HPP
-#define HARL_HPP
+# define HARL_HPP
 
-#include <iostream>
+# include <iostream>
+# include <string>
 
 class Harl
 {
