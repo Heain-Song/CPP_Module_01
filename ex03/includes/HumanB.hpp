@@ -6,7 +6,7 @@
 /*   By: hesong <hesong@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/11 20:27:21 by hesong            #+#    #+#             */
-/*   Updated: 2024/04/11 21:53:40 by hesong           ###   ########.fr       */
+/*   Updated: 2024/04/12 15:06:29 by hesong           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,16 +17,18 @@
 # include <iostream>
 # include <string>
 
-class	HumanB{
+class	HumanB
+{
 	private:
-		Weapon *_weapon;
-		std::string	const _name;
+		std::string	const	_name;
+		Weapon	*_weapon;
 
 	public:
-		HumanB(std::string const name, Weapon const * weapon);
+		HumanB(std::string const name, Weapon *weapon);
+		HumanB(std::string const name);
 		~HumanB(void);
 		void	attack(void);
-		void	setWeapon(Weapon& weapon);
+		void	setWeapon(Weapon &weapon);
 };
 
 #endif
