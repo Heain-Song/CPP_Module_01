@@ -6,7 +6,7 @@
 /*   By: hesong <hesong@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/11 20:23:24 by hesong            #+#    #+#             */
-/*   Updated: 2024/04/12 15:33:06 by hesong           ###   ########.fr       */
+/*   Updated: 2024/04/12 16:11:40 by hesong           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,7 +34,6 @@ int main()
 		club.setType("some other type of club");
 		bob.attack();
 	}
-	std::cout << "-------------------------------------------------------" << std::endl;
 	{
 		Weapon club = Weapon("crude spiked club");
 		HumanB jim("Jim"); //HumanB constructor called without weapon
