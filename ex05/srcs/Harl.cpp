@@ -6,7 +6,7 @@
 /*   By: hesong <hesong@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/11 23:31:41 by hesong            #+#    #+#             */
-/*   Updated: 2024/04/11 23:55:57 by hesong           ###   ########.fr       */
+/*   Updated: 2024/04/12 11:17:29 by hesong           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,19 +40,16 @@ void	Harl::error(void)
 }
 void	complain(std::string level)
 {
-	void (Harl::*f[4])(void) const = {&Harl::debug, &Harl::info, &Harl::warning, &Harl::error};
 	std::string levels[4] = {"DEBUG", "INFO", "WARNING", "ERROR"};
+	void (Harl::*f)(void) = {&Harl::debug, };
 
 	for (int i = 0; i < 4; i++)
 	{
 		if (level == levels[i])
 		{
-			(this->*f[i])();
+			//(this->*f[i])();
 			return ;
 		}
 	}
 	std::cout << "Level <" << level << "> unknown." << std::endl;
-
-
-
 }
