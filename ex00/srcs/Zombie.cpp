@@ -6,30 +6,23 @@
 /*   By: hesong <hesong@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/25 18:10:04 by hesong            #+#    #+#             */
-/*   Updated: 2024/04/11 19:00:39 by hesong           ###   ########.fr       */
+/*   Updated: 2024/04/12 15:56:58 by hesong           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Zombie.hpp"
 
-Zombie::Zombie(void)
-{
-	//this->_name = "no_name";
-}
 Zombie::Zombie(std::string name)
 {
-	this->setName(name);
+	this->name = name;
+	std::cout << "[Constructor] " << this->name << " is called" << std::endl;
 }
 
 Zombie::~Zombie(void)
 {
-	std::cout << this->_name << " has been destroyed!" << std::endl;
-}
-void	Zombie::setName(std::string name)
-{
-	this->_name = name;
+	std::cout << "[Destructor] " << this->name << " has been destroyed" << std::endl;
 }
 void	Zombie::announce(void)
 {
-	std::cout << this->_name << ": " << "BraiiiiiiinnnzzzZ..." << std::endl;
+	std::cout << this->name << ": " << "BraiiiiiiinnnzzzZ..." << std::endl;
 }
